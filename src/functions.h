@@ -1,0 +1,14 @@
+void handleErrors(void);
+int encrypt(unsigned char *plaintext, int plaintext_len, unsigned char *clef, unsigned char *iv, unsigned char *ciphertext);
+int decrypt(unsigned char *ciphertext, int ciphertext_len, unsigned char *clef, unsigned char *iv, unsigned char *plaintext);
+void write(unsigned char* ciphertext, unsigned char* Write_ciphertext);
+bool read(unsigned char* Read_ciphertext);
+void write_ciphertext_len(int ciphertext_len);
+int read_ciphertext_len();
+std::string sha256(const std::string str);
+bool File_exists (const std::string& name);
+bool Empty_file(std::ifstream& pFile);
+void write_mdp_id(std::map<std::string,std::string> mdp);
+void add_mdp_id(std::map<std::string,std::string> mdp);
+std::string convertToString(char* a, int size);
+void afficher_plaintext(std::string plaintext);
